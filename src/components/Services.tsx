@@ -27,7 +27,7 @@ export default function Services() {
       color: 'from-blue-600 to-blue-700',
       items: [
         { label: 'Website Development', desc: 'End-to-end creation for lead generation' },
-        { label: 'SEO & Content', desc: 'Organic visibility and thought leadership' },
+        { label: 'SEO/GEO & Content', desc: 'Organic visibility and thought leadership' },
         { label: 'Video Production', desc: 'AI-generated product and brand storytelling' }
       ]
     },

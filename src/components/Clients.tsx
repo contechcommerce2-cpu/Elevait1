@@ -73,8 +73,7 @@ export default function Clients() {
             Industry Recognition
           </h3>
           <p className="text-lg text-orange-100 mb-8 max-w-2xl mx-auto">
-            Our work has been recognized with multiple industry awards including Great Lifestyle Brands
-            and Digies Digital Award.
+            Our work has been recognized with multiple industry awards.
           </p>
           <div className="flex flex-wrap justify-center gap-8 items-center">
             <div className="text-center">
