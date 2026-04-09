@@ -1,4 +1,6 @@
-import { ArrowRight, TrendingUp } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import elevaitLogo from '../assets/elevait_Logo.png';
+import aiLogoDark from '../assets/AI_logo_-_elevait_-on_dark_bg_.png';
 
 export default function Hero() {
   return (
@@ -7,11 +9,19 @@ export default function Hero() {
 
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#f97316] to-transparent opacity-20 transform skew-x-12"></div>
 
-      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 sm:py-28 lg:py-36">
+      <nav className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-6 pb-2 flex items-center justify-between">
+        <img
+          src={elevaitLogo}
+          alt="elevait"
+          className="h-10 w-auto object-contain"
+        />
+      </nav>
+
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-24 lg:py-32">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="flex-1 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 border border-white/20">
-              <TrendingUp className="w-4 h-4 text-[#f97316]" />
+              <img src={aiLogoDark} alt="" className="w-4 h-4 object-contain" />
               <span>Elevate Brand. Story. Growth.</span>
             </div>
 

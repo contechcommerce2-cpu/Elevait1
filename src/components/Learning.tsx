@@ -1,4 +1,5 @@
-import { BookOpen, Users, TrendingUp, Briefcase, Lightbulb } from 'lucide-react';
+import { BookOpen, Users, Briefcase, Lightbulb } from 'lucide-react';
+import aiLogoWhite from '../assets/AI_logo_-_elevait_-on_white_bg_.png';
 
 export default function Learning() {
   const learningAreas = [
@@ -13,7 +14,7 @@ export default function Learning() {
       description: "Complex technical content transformed into digestible, engaging learning modules"
     },
     {
-      icon: TrendingUp,
+      icon: null,
       title: "Sales Enablement Training",
       description: "Equip your sales teams with the knowledge and skills to effectively communicate your value proposition"
     }
@@ -84,7 +85,11 @@ export default function Learning() {
               <div key={index} className="group">
                 <div className="bg-white rounded-xl p-8 border border-gray-200 hover:border-[#1e3a8a] hover:shadow-lg transition-all duration-300 h-full">
                   <div className="w-14 h-14 bg-gradient-to-br from-[#1e3a8a] to-[#2563eb] rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <Icon className="w-7 h-7 text-white" />
+                    {Icon ? (
+                      <Icon className="w-7 h-7 text-white" />
+                    ) : (
+                      <img src={aiLogoWhite} alt="" className="w-7 h-7 object-contain" />
+                    )}
                   </div>
 
                   <h3 className="text-xl font-bold text-gray-900 mb-3">

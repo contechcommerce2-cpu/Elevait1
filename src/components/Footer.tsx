@@ -1,3 +1,5 @@
+import elevaitLogo from '../assets/elevait_Logo.png';
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
@@ -5,12 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="mb-4">
-              <div className="text-3xl font-bold">
-                <span className="text-white">elev</span>
-                <span className="text-[#f97316]">a</span>
-                <span className="text-white">it</span>
-              </div>
-              <div className="text-sm text-gray-400 mt-1">Elevate Brand. Story. Growth.</div>
+              <img src={elevaitLogo} alt="elevait" className="h-10 w-auto object-contain" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-4">
               Revenue growth partner for industrial and renewable tech companies.
