@@ -1,5 +1,5 @@
 import { Award, Target } from 'lucide-react';
-import aiLogoDark from '../assets/AI_logo_-_elevait_-on_dark_bg_.png';
+import growthIcon from '../assets/A-_symbol_.png';
 
 export default function Results() {
   const caseStudies = [
@@ -92,22 +92,22 @@ export default function Results() {
         <div className="bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#2563eb] rounded-2xl p-8 sm:p-12 text-white">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <img src={aiLogoDark} alt="" className="w-8 h-8 object-contain mx-auto mb-3" />
+              <img src={growthIcon} alt="" className="w-8 h-8 object-contain mx-auto mb-3" />
               <div className="text-4xl font-bold">65%</div>
               <div className="text-sm text-blue-200">Average Ranking Improvement</div>
             </div>
             <div className="space-y-2">
-              <img src={aiLogoDark} alt="" className="w-8 h-8 object-contain mx-auto mb-3" />
+              <img src={growthIcon} alt="" className="w-8 h-8 object-contain mx-auto mb-3" />
               <div className="text-4xl font-bold">2,500+</div>
               <div className="text-sm text-blue-200">Leads Generated</div>
             </div>
             <div className="space-y-2">
-              <img src={aiLogoDark} alt="" className="w-8 h-8 object-contain mx-auto mb-3" />
+              <img src={growthIcon} alt="" className="w-8 h-8 object-contain mx-auto mb-3" />
               <div className="text-4xl font-bold">47%</div>
               <div className="text-sm text-blue-200">Average Acceptance Rate</div>
             </div>
             <div className="space-y-2">
-              <img src={aiLogoDark} alt="" className="w-8 h-8 object-contain mx-auto mb-3" />
+              <img src={growthIcon} alt="" className="w-8 h-8 object-contain mx-auto mb-3" />
               <div className="text-4xl font-bold">5x</div>
               <div className="text-sm text-blue-200">Average ROI</div>
             </div>

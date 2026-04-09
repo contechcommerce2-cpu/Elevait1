@@ -1,5 +1,5 @@
 import { BookOpen, Users, Briefcase, Lightbulb } from 'lucide-react';
-import aiLogoWhite from '../assets/AI_logo_-_elevait_-on_white_bg_.png';
+import growthIcon from '../assets/A-_symbol_.png';
 
 export default function Learning() {
   const learningAreas = [
@@ -88,7 +88,7 @@ export default function Learning() {
                     {Icon ? (
                       <Icon className="w-7 h-7 text-white" />
                     ) : (
-                      <img src={aiLogoWhite} alt="" className="w-7 h-7 object-contain" />
+                      <img src={growthIcon} alt="" className="w-7 h-7 object-contain" />
                     )}
                   </div>
 

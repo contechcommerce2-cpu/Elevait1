@@ -1,4 +1,4 @@
-import elevaitLogo from '../assets/elevait_Logo.png';
+import elevaitLogoWhiteWhite from '../assets/elevait_-_logo_in_white_.png';
 
 export default function Footer() {
   return (
@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="mb-4">
-              <img src={elevaitLogo} alt="elevait" className="h-10 w-auto object-contain" />
+              <img src={elevaitLogoWhite} alt="elevait" className="h-10 w-auto object-contain" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-4">
               Revenue growth partner for industrial and renewable tech companies.

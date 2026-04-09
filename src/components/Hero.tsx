@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react';
-import elevaitLogo from '../assets/elevait_Logo.png';
-import aiLogoDark from '../assets/AI_logo_-_elevait_-on_dark_bg_.png';
+import elevaitLogoWhiteWhite from '../assets/elevait_-_logo_in_white_.png';
+import growthIcon from '../assets/A-_symbol_.png';
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
 
       <nav className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-6 pb-2 flex items-center justify-between">
         <img
-          src={elevaitLogo}
+          src={elevaitLogoWhite}
           alt="elevait"
           className="h-10 w-auto object-contain"
         />
@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="flex-1 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 border border-white/20">
-              <img src={aiLogoDark} alt="" className="w-4 h-4 object-contain" />
+              <img src={growthIcon} alt="" className="w-4 h-4 object-contain" />
               <span>Elevate Brand. Story. Growth.</span>
             </div>
 
