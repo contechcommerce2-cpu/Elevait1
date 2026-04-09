@@ -2,6 +2,11 @@ import { Building2 } from 'lucide-react';
 import techMahindraLogo from '../assets/All_clients_logo-01.png';
 import faberLogo from '../assets/All_clients_logo-03.png';
 import frankeLogo from '../assets/All_clients_logo-04.png';
+import ingramMicroLogo from '../assets/All_clients_logo-11.png';
+import beetelLogo from '../assets/All_clients_logo-13.png';
+import carrierLogo from '../assets/All_clients_logo-15.png';
+import roadcastLogo from '../assets/All_clients_logo-27.png';
+import jaipurLitFestLogo from '../assets/All_clients_logo-29.png';
 
 type Client =
   | { name: string; category: string; logo: string }
@@ -13,12 +18,15 @@ export default function Clients() {
     { name: 'Cisco', category: 'Technology' },
     { name: 'Tech Mahindra', category: 'IT Services', logo: techMahindraLogo },
     { name: 'Franke', category: 'Manufacturing', logo: frankeLogo },
-    { name: 'Carrier', category: 'Manufacturing' },
+    { name: 'Carrier', category: 'Manufacturing', logo: carrierLogo },
     { name: 'Trilegal', category: 'Professional Services' },
-    { name: 'Ingram Micro', category: 'Technology Distribution' },
+    { name: 'Ingram Micro', category: 'Technology Distribution', logo: ingramMicroLogo },
+    { name: 'Beetel', category: 'Telecommunications', logo: beetelLogo },
     { name: 'Cyient', category: 'Engineering Services' },
     { name: 'Aster Pharmacy', category: 'Healthcare' },
-    { name: 'Faber', category: 'Appliances', logo: faberLogo }
+    { name: 'Faber', category: 'Appliances', logo: faberLogo },
+    { name: 'Roadcast', category: 'Technology', logo: roadcastLogo },
+    { name: 'Jaipur Literature Festival', category: 'Events & Culture', logo: jaipurLitFestLogo },
   ];
 
   const categories = [
