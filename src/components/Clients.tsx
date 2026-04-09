@@ -1,19 +1,24 @@
 import { Building2 } from 'lucide-react';
+import techMahindraLogo from '../assets/All_clients_logo-01.png';
+import faberLogo from '../assets/All_clients_logo-03.png';
+import frankeLogo from '../assets/All_clients_logo-04.png';
+
+type Client =
+  | { name: string; category: string; logo: string }
+  | { name: string; category: string; logo?: undefined };
 
 export default function Clients() {
-  const clients = [
+  const clients: Client[] = [
     { name: 'Microsoft', category: 'Technology' },
     { name: 'Cisco', category: 'Technology' },
-    { name: 'Apple', category: 'Technology' },
-    { name: 'Tech Mahindra', category: 'IT Services' },
-    { name: 'Franke', category: 'Manufacturing' },
+    { name: 'Tech Mahindra', category: 'IT Services', logo: techMahindraLogo },
+    { name: 'Franke', category: 'Manufacturing', logo: frankeLogo },
     { name: 'Carrier', category: 'Manufacturing' },
     { name: 'Trilegal', category: 'Professional Services' },
     { name: 'Ingram Micro', category: 'Technology Distribution' },
-    { name: 'Coursera', category: 'Education' },
     { name: 'Cyient', category: 'Engineering Services' },
     { name: 'Aster Pharmacy', category: 'Healthcare' },
-    { name: 'Faber', category: 'Appliances' }
+    { name: 'Faber', category: 'Appliances', logo: faberLogo }
   ];
 
   const categories = [
@@ -59,9 +64,19 @@ export default function Clients() {
               key={idx}
               className="group bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-[#f97316] hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center text-center"
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-[#1e3a8a] to-[#2563eb] rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                <Building2 className="w-6 h-6 text-white" />
-              </div>
+              {client.logo ? (
+                <div className="h-14 flex items-center justify-center mb-3">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="max-h-14 max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ) : (
+                <div className="w-12 h-12 bg-gradient-to-br from-[#1e3a8a] to-[#2563eb] rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <Building2 className="w-6 h-6 text-white" />
+                </div>
+              )}
               <div className="font-bold text-gray-900 mb-1">{client.name}</div>
               <div className="text-xs text-gray-500">{client.category}</div>
             </div>
