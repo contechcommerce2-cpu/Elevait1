@@ -1,4 +1,4 @@
-import elevaitLogoWhiteWhite from '../assets/elevait_-_logo_in_white_.png';
+import elevaitLogoWhite from '../assets/elevait_-_logo_in_white_.png';
 
 export default function Footer() {
   return (
