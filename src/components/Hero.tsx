@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import elevaitLogoWhiteWhite from '../assets/elevait_-_logo_in_white_.png';
+import elevaitLogoWhite from '../assets/elevait_-_logo_in_white_.png';
 import growthIcon from '../assets/A-_symbol_.png';
 
 export default function Hero() {
