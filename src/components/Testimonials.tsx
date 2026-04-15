@@ -3,22 +3,22 @@ import { Quote } from 'lucide-react';
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Elevait transformed our brand presence and helped us achieve measurable results in lead generation. Their strategic approach to content and demand generation has been invaluable.",
-      author: "Client Name",
-      role: "Chief Marketing Officer",
-      company: "Industrial Technology Company"
+      quote: "Building Vedanya from the ground up was not just about creating a school, it was about crafting a philosophy of learning. From the very beginning, the team understood this vision with remarkable clarity. They helped us define what Vedanya stands for, a space where learning is human-centred, future-forward, and deeply rooted in purpose. From conceptualizing the name and identity to positioning Vedanya as a new-age learning ecosystem, they treated this project as a shared journey of creation.",
+      author: "Anku Sharma",
+      role: "Ex Vedanya Projects and Operations Lead",
+      company: "Vedanya"
     },
     {
-      quote: "The team's expertise in B2B marketing for complex technical products is exceptional. They truly understand how to communicate our value proposition to decision-makers.",
-      author: "Client Name",
-      role: "VP of Marketing",
-      company: "Renewable Energy Solutions"
+      quote: "The Elevait team brings a strong understanding of the B2B and technology landscape. They go beyond being just an agency — they truly function as an extended marketing arm. What stood out was their deep expertise in B2B marketing ecosystem, content and lead generation, with a nuanced approach across different stages of the funnel. Their ability to align strategy with execution made a meaningful impact on our marketing outcomes.",
+      author: "Vishal Jain",
+      role: "Co-founder",
+      company: "Roadcast Technologies"
     },
     {
-      quote: "Working with Elevait has been a game-changer for our digital presence. Their data-driven approach and consistent execution delivered results beyond our expectations.",
-      author: "Client Name",
-      role: "Director of Business Development",
-      company: "Engineering Services Firm"
+      quote: "Working with the Elevait team was a standout experience for Trilegal's digital strategy team. They took full ownership of our SEO, delivering a substantial surge in organic web traffic and a significant improvement in search rankings. Their strategy successfully helped expanding our LinkedIn following, creating a cohesive brand voice that resonated across platforms. The results went well beyond vanity metrics — their work led to increased visibility and a measurable uptick in high-quality lead capture. What truly sets Elevate apart though, is the people. Their passion for excellence and attention to detail meant that no stone was left unturned. They were proactive, transparent, and felt like a true extension of our own team.",
+      author: "Richa Chugh",
+      role: "Ex Marketing, Trilegal",
+      company: "Trilegal"
     }
   ];
 
@@ -36,13 +36,13 @@ export default function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 rounded-xl p-8 relative hover:shadow-lg transition-shadow">
+            <div key={index} className="bg-gray-50 rounded-xl p-8 relative hover:shadow-lg transition-shadow flex flex-col">
               <div className="absolute top-6 right-6 text-[#f97316] opacity-20">
                 <Quote className="w-12 h-12" />
               </div>
 
-              <div className="relative">
-                <p className="text-gray-700 leading-relaxed mb-6 italic">
+              <div className="relative flex flex-col flex-1">
+                <p className="text-gray-700 leading-relaxed mb-6 italic flex-1">
                   "{testimonial.quote}"
                 </p>
 
@@ -54,12 +54,6 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-gray-600 italic">
-            Client testimonials coming soon - we're currently gathering feedback from our partners
-          </p>
         </div>
       </div>
     </section>
