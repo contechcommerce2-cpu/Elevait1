@@ -27,7 +27,7 @@ export default function Hero() {
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Revenue Growth Partner for{' '}
-              <span className="text-[#f97316]">Industrial & Energy Tech</span>{' '}
+              <span className="text-[#f97316]">Industrial, Energy Tech & SaaS</span>{' '}
               | Positioning • Marketing • Learning
             </h1>
 

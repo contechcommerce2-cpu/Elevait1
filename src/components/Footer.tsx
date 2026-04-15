@@ -10,7 +10,7 @@ export default function Footer() {
               <img src={elevaitLogoWhite} alt="elevait" className="h-10 w-auto object-contain" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-4">
-              Revenue growth partner for industrial and renewable tech companies.
+              Revenue growth partner for industrial, renewable tech, and SaaS companies.
               We help turn complex offerings into compelling narratives and predictable revenue.
             </p>
           </div>

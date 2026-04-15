@@ -30,7 +30,7 @@ export default function Testimonials() {
             What Our Clients Say
           </h2>
           <p className="text-xl text-gray-600">
-            Trusted by industrial and renewable technology companies everywhere
+            Trusted by industrial, renewable technology, and SaaS companies everywhere
           </p>
         </div>
 

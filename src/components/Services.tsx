@@ -53,7 +53,7 @@ export default function Services() {
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
             From brand strategy to demand generation, we provide end-to-end marketing solutions
-            tailored for industrial and renewable tech companies.
+            tailored for industrial, renewable tech, and SaaS companies.
           </p>
         </div>
 

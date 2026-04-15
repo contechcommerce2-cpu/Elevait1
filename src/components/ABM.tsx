@@ -101,10 +101,10 @@ export default function ABM() {
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4">
                 Why ABM for{' '}
-                <span className="text-[#f97316]">Industrial & Energy Tech?</span>
+                <span className="text-[#f97316]">Industrial, Energy Tech & SaaS?</span>
               </h3>
               <p className="text-blue-100 leading-relaxed mb-6">
-                Complex, long sales cycles. Multiple stakeholders. High-value deals. These are the realities of B2B industrial and energy tech — and exactly why ABM outperforms traditional demand generation. Rather than generating volume, ABM generates precision.
+                Complex, long sales cycles. Multiple stakeholders. High-value deals. These are the realities of B2B industrial, energy tech, and SaaS — and exactly why ABM outperforms traditional demand generation. Rather than generating volume, ABM generates precision.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white/10 rounded-xl p-4">
