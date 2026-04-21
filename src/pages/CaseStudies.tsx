@@ -120,17 +120,51 @@ export default function CaseStudies() {
         </div>
       </nav>
 
-      {/* Header */}
-      <div className="bg-gradient-to-br from-[#0f2357] via-[#1e3a8a] to-[#1e40af] text-white py-20 sm:py-28">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 border border-white/20">
-            <BarChart3 className="w-4 h-4 text-[#f97316]" />
-            <span>Client Success Stories</span>
+      {/* Header Banner */}
+      <div className="relative text-white overflow-hidden py-24 sm:py-32">
+        {/* Background photo */}
+        <img
+          src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1920&h=700&fit=crop"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0d1f4e]/95 via-[#1e3a8a]/90 to-[#1e3a8a]/70"></div>
+        {/* Orange accent */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#f97316]/20 to-transparent"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            {/* Left: text */}
+            <div className="flex-1 max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 border border-white/20">
+                <BarChart3 className="w-4 h-4 text-[#f97316]" />
+                <span>Client Success Stories</span>
+              </div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Real Results for{' '}
+                <span className="text-[#f97316]">Real Brands</span>
+              </h1>
+              <p className="text-xl text-blue-100 leading-relaxed max-w-xl">
+                A deeper look at how we have helped B2B brands solve real marketing challenges and drive measurable growth across SEO, demand generation, and brand building.
+              </p>
+            </div>
+
+            {/* Right: stat cards */}
+            <div className="flex-shrink-0 grid grid-cols-2 gap-4 w-full max-w-xs lg:max-w-sm">
+              {[
+                { value: '65%', label: 'Avg. Ranking Improvement' },
+                { value: '2,500+', label: 'Leads Generated' },
+                { value: '47%', label: 'Avg. Acceptance Rate' },
+                { value: '5x', label: 'Average ROI' },
+              ].map((s, i) => (
+                <div key={i} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-5 py-5 text-center">
+                  <div className="text-3xl font-bold text-[#f97316] mb-1">{s.value}</div>
+                  <div className="text-xs text-blue-200 font-medium leading-snug">{s.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Case Studies</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
-            A deeper look at how we have helped B2B brands solve real marketing challenges and drive measurable growth.
-          </p>
         </div>
       </div>
 
