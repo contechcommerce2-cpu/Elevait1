@@ -104,24 +104,8 @@ const caseStudies = [
 export default function CaseStudies() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Nav */}
-      <nav className="bg-gradient-to-r from-[#1e3a8a] to-[#2563eb] text-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-5 flex items-center justify-between">
-          <Link to="/">
-            <img src={elevaitLogoWhite} alt="elevait" className="h-9 w-auto object-contain" />
-          </Link>
-          <Link
-            to="/"
-            className="group inline-flex items-center gap-2 text-sm font-medium text-blue-200 hover:text-white transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-            Back to Home
-          </Link>
-        </div>
-      </nav>
-
-      {/* Header Banner */}
-      <div className="relative text-white overflow-hidden py-24 sm:py-32">
+      {/* Header Banner — nav embedded */}
+      <div className="relative text-white overflow-hidden">
         {/* Background photo */}
         <img
           src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1920&h=700&fit=crop"
@@ -133,33 +117,48 @@ export default function CaseStudies() {
         {/* Orange accent */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#f97316]/20 to-transparent"></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        {/* Nav inside banner */}
+        <nav className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-5 pb-0 flex items-center justify-between">
+          <Link to="/">
+            <img src={elevaitLogoWhite} alt="elevait" className="h-9 w-auto object-contain" />
+          </Link>
+          <Link
+            to="/"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-blue-200 hover:text-white transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            Back to Home
+          </Link>
+        </nav>
+
+        {/* Banner content */}
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-10 pb-14 sm:pb-16">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
             {/* Left: text */}
             <div className="flex-1 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 border border-white/20">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-4 border border-white/20">
                 <BarChart3 className="w-4 h-4 text-[#f97316]" />
                 <span>Client Success Stories</span>
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-bold mb-4 leading-tight">
                 Real Results for{' '}
                 <span className="text-[#f97316]">Real Brands</span>
               </h1>
-              <p className="text-xl text-blue-100 leading-relaxed max-w-xl">
+              <p className="text-lg text-blue-100 leading-relaxed max-w-xl">
                 A deeper look at how we have helped B2B brands solve real marketing challenges and drive measurable growth across SEO, demand generation, and brand building.
               </p>
             </div>
 
             {/* Right: stat cards */}
-            <div className="flex-shrink-0 grid grid-cols-2 gap-4 w-full max-w-xs lg:max-w-sm">
+            <div className="flex-shrink-0 grid grid-cols-2 gap-3 w-full max-w-[17rem] lg:max-w-xs">
               {[
-                { value: '65%', label: 'Avg. Ranking Improvement' },
+                { value: '65%', label: 'Avg. Ranking Lift' },
                 { value: '2,500+', label: 'Leads Generated' },
-                { value: '47%', label: 'Avg. Acceptance Rate' },
+                { value: '47%', label: 'Acceptance Rate' },
                 { value: '5x', label: 'Average ROI' },
               ].map((s, i) => (
-                <div key={i} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-5 py-5 text-center">
-                  <div className="text-3xl font-bold text-[#f97316] mb-1">{s.value}</div>
+                <div key={i} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-4 py-4 text-center">
+                  <div className="text-2xl font-bold text-[#f97316] mb-0.5">{s.value}</div>
                   <div className="text-xs text-blue-200 font-medium leading-snug">{s.label}</div>
                 </div>
               ))}
