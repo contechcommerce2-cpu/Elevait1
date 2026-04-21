@@ -1,4 +1,5 @@
-import { Award, Target } from 'lucide-react';
+import { Award, Target, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import growthIcon from '../assets/A-_symbol_.png';
 
 export default function Results() {
@@ -84,6 +85,16 @@ export default function Results() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mb-10">
+          <Link
+            to="/case-studies"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-[#1e3a8a] hover:bg-[#1e40af] text-white rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+          >
+            Explore More Case Studies
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
 
         <div className="bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#2563eb] rounded-2xl p-8 sm:p-12 text-white">
