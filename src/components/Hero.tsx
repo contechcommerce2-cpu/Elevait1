@@ -20,86 +20,72 @@ export default function Hero() {
         />
       </nav>
 
-      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-10 sm:py-14 lg:py-16">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          <div className="flex-1 max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Revenue Growth Partner for{' '}
-              <span className="text-[#f97316]">Industrial, Energy Tech & SaaS</span>{' '}
-              | Positioning • Marketing • Learning
-            </h1>
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-8 pb-10 sm:pb-12">
+        <div className="flex flex-col lg:flex-row items-stretch gap-10 lg:gap-14">
 
-            <p className="text-xl sm:text-2xl text-blue-100 leading-relaxed mb-7 font-light">
-              Elevait helps turn complex offerings into compelling narratives and predictable revenue
-              through AI-powered content and demand generation.
-            </p>
+          {/* Left column */}
+          <div className="flex-1 flex flex-col justify-between">
+            <div>
+              <h1 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-bold leading-snug mb-4">
+                We are your Revenue Growth Partner for{' '}
+                <span className="text-[#f97316]">Industrial, Energy Tech and SaaS</span>{' '}
+                — helping you win through Positioning, Marketing and Learning.
+              </h1>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+              <p className="text-base sm:text-lg text-blue-100 leading-relaxed mb-6 font-light max-w-xl">
+                Elevait turns complex offerings into compelling narratives and predictable revenue
+                through AI-powered content and demand generation.
+              </p>
+
               <button
                 onClick={scrollToContact}
-                className="group px-8 py-4 bg-[#f97316] hover:bg-[#ea580c] text-white rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
+                className="group inline-flex items-center gap-2 px-7 py-3.5 bg-[#f97316] hover:bg-[#ea580c] text-white rounded-lg font-semibold text-base transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Contact Us
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-white/20">
-              <div className="grid grid-cols-3 gap-8">
-                <div>
-                  <div className="text-3xl sm:text-4xl font-bold text-[#f97316] mb-1">100+</div>
-                  <div className="text-sm text-blue-200">Years Combined Experience</div>
-                </div>
-                <div>
-                  <div className="text-3xl sm:text-4xl font-bold text-[#f97316] mb-1">50+</div>
-                  <div className="text-sm text-blue-200">Global Brands Served</div>
-                </div>
-                <div>
-                  <div className="text-3xl sm:text-4xl font-bold text-[#f97316] mb-1">300+</div>
-                  <div className="text-sm text-blue-200">Campaigns Delivered</div>
-                </div>
+            <div className="mt-8 pt-6 border-t border-white/20 grid grid-cols-3 gap-6">
+              <div>
+                <div className="text-2xl sm:text-3xl font-bold text-[#f97316] mb-0.5">100+</div>
+                <div className="text-xs text-blue-200 leading-snug">Years Combined Experience</div>
+              </div>
+              <div>
+                <div className="text-2xl sm:text-3xl font-bold text-[#f97316] mb-0.5">50+</div>
+                <div className="text-xs text-blue-200 leading-snug">Global Brands Served</div>
+              </div>
+              <div>
+                <div className="text-2xl sm:text-3xl font-bold text-[#f97316] mb-0.5">300+</div>
+                <div className="text-xs text-blue-200 leading-snug">Campaigns Delivered</div>
               </div>
             </div>
           </div>
 
-          <div className="flex-1 max-w-xl">
-            <div className="relative">
+          {/* Right column */}
+          <div className="lg:w-[420px] flex-shrink-0">
+            <div className="relative h-full">
               <div className="absolute inset-0 bg-[#f97316] rounded-2xl blur-3xl opacity-20"></div>
-              <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl">
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4 p-4 bg-white/10 rounded-xl">
-                    <div className="w-12 h-12 bg-[#f97316] rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-2xl font-bold">1</span>
+              <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl h-full flex flex-col justify-center gap-4">
+                {[
+                  { n: '1', title: 'Brand DNA & Story', desc: 'Building compelling narratives that resonate with your audience' },
+                  { n: '2', title: 'Demand Generation', desc: 'Multi-channel campaigns designed to attract and convert' },
+                  { n: '3', title: 'Measurable Results', desc: 'Data-driven optimization with transparent ROI reporting' },
+                ].map(({ n, title, desc }) => (
+                  <div key={n} className="flex items-start gap-4 p-4 bg-white/10 rounded-xl">
+                    <div className="w-10 h-10 bg-[#f97316] rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-lg font-bold">{n}</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">Brand DNA & Story</h3>
-                      <p className="text-sm text-blue-200">Building compelling narratives that resonate</p>
+                      <h3 className="font-semibold text-sm mb-0.5">{title}</h3>
+                      <p className="text-xs text-blue-200 leading-snug">{desc}</p>
                     </div>
                   </div>
-
-                  <div className="flex items-start gap-4 p-4 bg-white/10 rounded-xl">
-                    <div className="w-12 h-12 bg-[#f97316] rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-2xl font-bold">2</span>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">Demand Generation</h3>
-                      <p className="text-sm text-blue-200">Multi-channel campaigns that convert</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4 p-4 bg-white/10 rounded-xl">
-                    <div className="w-12 h-12 bg-[#f97316] rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-2xl font-bold">3</span>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">Measurable Results</h3>
-                      <p className="text-sm text-blue-200">Data-driven optimization & transparent ROI</p>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
