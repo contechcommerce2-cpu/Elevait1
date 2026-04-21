@@ -1,6 +1,5 @@
 import { ArrowRight } from 'lucide-react';
 import elevaitLogoWhite from '../assets/elevait_-_logo_in_white_.png';
-import growthIcon from '../assets/A-_symbol_.png';
 
 export default function Hero() {
   return (
@@ -20,11 +19,6 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-24 lg:py-32">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="flex-1 max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 border border-white/20">
-              <img src={growthIcon} alt="" className="w-4 h-4 object-contain" />
-              <span>Elevate Brand. Story. Growth.</span>
-            </div>
-
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Revenue Growth Partner for{' '}
               <span className="text-[#f97316]">Industrial, Energy Tech & SaaS</span>{' '}
@@ -38,11 +32,8 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="group px-8 py-4 bg-[#f97316] hover:bg-[#ea580c] text-white rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105">
-                Get Started
+                Contact Us
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white rounded-lg font-semibold text-lg transition-all duration-300 border border-white/30 hover:border-white/50">
-                View Case Studies
               </button>
             </div>
 

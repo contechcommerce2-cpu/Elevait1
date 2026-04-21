@@ -1,3 +1,7 @@
+import linkedinLogo from '../assets/LINKEDIN.png';
+import hubspotLogo from '../assets/hubspot.png';
+import shopifyLogo from '../assets/shopify.png';
+import googleLogo from '../assets/google.png';
 import techMahindraLogo from '../assets/All_clients_logo-01.png';
 import faberLogo from '../assets/All_clients_logo-03.png';
 import frankeLogo from '../assets/All_clients_logo-04.png';
@@ -53,6 +57,31 @@ export default function Clients() {
               />
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 pt-10 border-t border-gray-100">
+          <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 text-center mb-6">
+            Technology Partners
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            {[
+              { name: 'Google', logo: googleLogo },
+              { name: 'HubSpot', logo: hubspotLogo },
+              { name: 'LinkedIn', logo: linkedinLogo },
+              { name: 'Shopify', logo: shopifyLogo },
+            ].map((partner) => (
+              <div
+                key={partner.name}
+                className="group flex items-center justify-center px-6 py-3 rounded-xl border border-gray-100 hover:border-[#f97316]/40 hover:shadow-sm transition-all duration-300 bg-white"
+              >
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-7 w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

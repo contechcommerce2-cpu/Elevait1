@@ -81,9 +81,6 @@ export default function Results() {
                   {study.description}
                 </p>
 
-                <button className="mt-6 w-full py-3 bg-gray-100 hover:bg-[#f97316] hover:text-white text-gray-900 rounded-lg font-semibold transition-all duration-300">
-                  View Case Study
-                </button>
               </div>
             </div>
           ))}

@@ -105,11 +105,6 @@ export default function Learning() {
           })}
         </div>
 
-        <div className="mt-12 text-center">
-          <button className="px-8 py-4 bg-[#1e3a8a] hover:bg-[#1e40af] text-white rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
-            Explore Learning Solutions
-          </button>
-        </div>
       </div>
     </section>
   );
