@@ -1,6 +1,10 @@
 import { ArrowRight } from 'lucide-react';
 import elevaitLogoWhite from '../assets/elevait_-_logo_in_white_.png';
 
+function scrollToContact() {
+  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+}
+
 export default function Hero() {
   return (
     <section className="relative bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#2563eb] text-white overflow-hidden">
@@ -16,7 +20,7 @@ export default function Hero() {
         />
       </nav>
 
-      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-24 lg:py-32">
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-10 sm:py-14 lg:py-16">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="flex-1 max-w-3xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -25,19 +29,22 @@ export default function Hero() {
               | Positioning • Marketing • Learning
             </h1>
 
-            <p className="text-xl sm:text-2xl text-blue-100 leading-relaxed mb-10 font-light">
+            <p className="text-xl sm:text-2xl text-blue-100 leading-relaxed mb-7 font-light">
               Elevait helps turn complex offerings into compelling narratives and predictable revenue
               through AI-powered content and demand generation.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group px-8 py-4 bg-[#f97316] hover:bg-[#ea580c] text-white rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105">
+              <button
+                onClick={scrollToContact}
+                className="group px-8 py-4 bg-[#f97316] hover:bg-[#ea580c] text-white rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
+              >
                 Contact Us
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
-            <div className="mt-12 pt-12 border-t border-white/20">
+            <div className="mt-8 pt-8 border-t border-white/20">
               <div className="grid grid-cols-3 gap-8">
                 <div>
                   <div className="text-3xl sm:text-4xl font-bold text-[#f97316] mb-1">100+</div>
