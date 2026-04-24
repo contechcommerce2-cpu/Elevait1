@@ -16,7 +16,6 @@ async function prerender() {
 
     let page = template;
 
-    // Inject helmet meta tags into <head>
     if (helmet) {
       const headTags = [
         helmet.title?.toString() ?? '',
@@ -31,7 +30,6 @@ async function prerender() {
       }
     }
 
-    // Inject rendered app HTML into root div
     page = page.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
 
     const filePath =
