@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero';
 import Problem from './components/Problem';
 import Services from './components/Services';
@@ -30,10 +30,12 @@ function Home() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/case-studies" element={<CaseStudies />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/case-studies" element={<CaseStudies />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
