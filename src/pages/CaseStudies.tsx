@@ -1,5 +1,6 @@
 import { ArrowLeft, BarChart3, CheckCircle, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import elevaitLogoWhite from '../assets/elevait_-_logo_in_white_.png';
 import fireflyLogo from '../assets/All_clients_logo-40.png';
 import ingramLogo from '../assets/All_clients_logo-11.png';
@@ -104,6 +105,14 @@ const caseStudies = [
 export default function CaseStudies() {
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Case Studies | Elevait - B2B Marketing Success Stories</title>
+        <meta name="description" content="See how Elevait helped B2B brands like FireFly Networks, HaystackAnalytics and Ingram Micro drive measurable growth through SEO, demand generation, and brand strategy." />
+        <link rel="canonical" href="https://elevait.com/case-studies" />
+        <meta property="og:title" content="Case Studies | Elevait - B2B Marketing Success Stories" />
+        <meta property="og:description" content="Real results for real brands. See how Elevait drives measurable growth for Industrial, Energy Tech and SaaS companies." />
+        <meta property="og:url" content="https://elevait.com/case-studies" />
+      </Helmet>
       {/* Header Banner — nav embedded */}
       <div className="relative text-white overflow-hidden">
         {/* Background photo */}
